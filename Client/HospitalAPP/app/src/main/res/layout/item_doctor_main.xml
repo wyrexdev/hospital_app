@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/card"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <RelativeLayout
+        android:layout_width="160dp"
+        android:layout_height="165dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/edittext_border"
+            android:backgroundTint="#FFFFFF"
+            android:clipToOutline="true"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/pp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/doctor"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"
+                android:background="@drawable/image_border"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Doktor Adı"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="@font/nunito_medium"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/go"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:translationZ="2dp"
+            android:padding="3dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:background="@drawable/edittext_border"
+            android:elevation="100000dp"
+            android:backgroundTint="#f8f7fd"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:padding="5dp"
+                android:background="@drawable/edittext_border"
+                android:clipToOutline="true"
+                android:backgroundTint="#2C2C2C">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/next"
+                    android:translationZ="2dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

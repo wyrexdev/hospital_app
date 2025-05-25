@@ -1,0 +1,3 @@
+0 = Devlet Hastanesi
+1 = Özel Hastane 
+2 = Fakülte 

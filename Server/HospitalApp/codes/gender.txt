@@ -1,0 +1,3 @@
+0 = Erkek
+1 = Bayan
+2 = Belirtmek İstemiyorum

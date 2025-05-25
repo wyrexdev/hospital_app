@@ -1,0 +1,4 @@
+0 = Kullanıcı
+1 = Doktor
+2 = Yönetici
+3 = Admin

@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonalSetup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="50dp"
+        android:paddingBottom="20dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:gravity="center_horizontal">
+
+        <RelativeLayout
+            android:id="@+id/pre_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical|center_horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/info"/>
+
+                <TextView
+                    android:id="@+id/prek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profil Resmi Eklenmedi!"
+                    android:fontFamily="@font/nunito_medium"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#0060FC"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/save"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/tick"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="20dp"
+            android:background="#D5D5D5"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="325dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:layout_gravity="center_horizontal">
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="110dp">
+
+                    <LinearLayout
+                        android:id="@+id/selectPp"
+                        android:layout_width="37dp"
+                        android:layout_height="37dp"
+                        android:clipToOutline="true"
+                        android:translationZ="2dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/image_border"
+                        android:elevation="10dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/image_border"
+                            android:scaleType="centerCrop"
+                            android:padding="3dp"
+                            android:src="@drawable/pen"/>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/pp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:clipToOutline="true"
+                        android:background="@drawable/image_border"
+                        android:elevation="10dp"
+                        android:scaleType="centerCrop"
+                        android:translationZ="1dp"
+                        android:padding="3dp"
+                        android:src="@drawable/pp"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:translationZ="2dp"
+                            android:layout_centerVertical="true"
+                            android:elevation="10dp"
+                            android:layout_marginLeft="2dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="7dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/user"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:translationZ="2dp"
+                            android:elevation="10dp"
+                            android:textColor="#bdbfc1"
+                            android:textSize="12sp"
+                            android:text="İsminiz *"
+                            android:fontFamily="@font/nunito_medium"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="4dp"/>
+
+                        <EditText
+                            android:id="@+id/name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:elevation="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="20dp"
+                            android:translationZ="1dp"
+                            android:textSize="15sp"
+                            android:paddingLeft="40dp"
+                            android:textColorHint="#bdbfc1"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:fontFamily="@font/nunito_medium"
+                            android:textColor="@color/black"
+                            android:background="@drawable/edittext_border"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <LinearLayout
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:translationZ="2dp"
+                            android:layout_centerVertical="true"
+                            android:elevation="10dp"
+                            android:layout_marginLeft="2dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="7dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/user"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:translationZ="2dp"
+                            android:elevation="10dp"
+                            android:textColor="#bdbfc1"
+                            android:textSize="12sp"
+                            android:text="Soyisminiz *"
+                            android:fontFamily="@font/nunito_medium"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="4dp"/>
+
+                        <EditText
+                            android:id="@+id/surname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:elevation="10dp"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="20dp"
+                            android:translationZ="1dp"
+                            android:textSize="15sp"
+                            android:paddingLeft="40dp"
+                            android:textColorHint="#bdbfc1"
+                            android:fontFamily="@font/nunito_medium"
+                            android:textColor="@color/black"
+                            android:background="@drawable/edittext_border"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <LinearLayout
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:translationZ="2dp"
+                            android:layout_centerVertical="true"
+                            android:elevation="10dp"
+                            android:layout_marginLeft="2dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="7dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/gender"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:translationZ="2dp"
+                            android:elevation="10dp"
+                            android:textColor="#bdbfc1"
+                            android:textSize="12sp"
+                            android:text="Cinsiyetiniz *"
+                            android:fontFamily="@font/nunito_medium"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="4dp"/>
+
+                        <TextView
+                            android:id="@+id/gender"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:elevation="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="20dp"
+                            android:translationZ="1dp"
+                            android:textSize="15sp"
+                            android:paddingLeft="40dp"
+                            android:textColorHint="#bdbfc1"
+                            android:textColor="@color/black"
+                            android:text="Belirtilmedi"
+                            android:background="@drawable/edittext_border"
+                            android:fontFamily="@font/nunito_medium"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <LinearLayout
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:translationZ="2dp"
+                            android:layout_centerVertical="true"
+                            android:elevation="10dp"
+                            android:layout_marginLeft="2dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="7dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/id"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:translationZ="2dp"
+                            android:elevation="10dp"
+                            android:textColor="#bdbfc1"
+                            android:textSize="12sp"
+                            android:text="TC Kimlik Numaranız *"
+                            android:fontFamily="@font/nunito_medium"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="4dp"/>
+
+                        <EditText
+                            android:id="@+id/tc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:elevation="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="20dp"
+                            android:imeOptions="actionNext"
+                            android:maxLines="1"
+                            android:translationZ="1dp"
+                            android:inputType="number"
+                            android:maxLength="11"
+                            android:textSize="15sp"
+                            android:paddingLeft="40dp"
+                            android:textColorHint="#bdbfc1"
+                            android:fontFamily="@font/nunito_medium"
+                            android:textColor="@color/black"
+                            android:background="@drawable/edittext_border"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <LinearLayout
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:translationZ="2dp"
+                            android:layout_centerVertical="true"
+                            android:elevation="10dp"
+                            android:layout_marginLeft="2dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="7dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/date"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:translationZ="2dp"
+                            android:elevation="10dp"
+                            android:textColor="#bdbfc1"
+                            android:textSize="12sp"
+                            android:text="Doğum Yılınız *"
+                            android:fontFamily="@font/nunito_medium"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="4dp"/>
+
+                        <EditText
+                            android:id="@+id/birthdate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:elevation="10dp"
+                            android:paddingBottom="10dp"
+                            android:imeOptions="actionNext"
+                            android:maxLines="1"
+                            android:paddingTop="20dp"
+                            android:translationZ="1dp"
+                            android:maxLength="4"
+                            android:inputType="number"
+                            android:textSize="15sp"
+                            android:paddingLeft="40dp"
+                            android:textColorHint="#bdbfc1"
+                            android:fontFamily="@font/nunito_medium"
+                            android:textColor="@color/black"
+                            android:background="@drawable/edittext_border"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <LinearLayout
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:translationZ="2dp"
+                            android:layout_centerVertical="true"
+                            android:elevation="10dp"
+                            android:layout_marginLeft="2dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="7dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/gluten"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:translationZ="2dp"
+                            android:elevation="10dp"
+                            android:textColor="#bdbfc1"
+                            android:textSize="12sp"
+                            android:text="Varsa Alerjileriniz"
+                            android:fontFamily="@font/nunito_medium"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="4dp"/>
+
+                        <EditText
+                            android:id="@+id/allergy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:elevation="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="20dp"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:translationZ="1dp"
+                            android:textSize="15sp"
+                            android:paddingLeft="40dp"
+                            android:textColorHint="#bdbfc1"
+                            android:fontFamily="@font/nunito_medium"
+                            android:textColor="@color/black"
+                            android:background="@drawable/edittext_border"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <LinearLayout
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:translationZ="2dp"
+                            android:layout_centerVertical="true"
+                            android:elevation="10dp"
+                            android:layout_marginLeft="2dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="7dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/long_term_care"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:translationZ="2dp"
+                            android:elevation="10dp"
+                            android:textColor="#bdbfc1"
+                            android:textSize="12sp"
+                            android:text="Varsa Kronik Hastalıklarınız"
+                            android:fontFamily="@font/nunito_medium"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="4dp"/>
+
+                        <EditText
+                            android:id="@+id/chronic"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:elevation="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="20dp"
+                            android:translationZ="1dp"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:textSize="15sp"
+                            android:paddingLeft="40dp"
+                            android:textColorHint="#bdbfc1"
+                            android:fontFamily="@font/nunito_medium"
+                            android:textColor="@color/black"
+                            android:background="@drawable/edittext_border"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <LinearLayout
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:translationZ="2dp"
+                            android:layout_centerVertical="true"
+                            android:elevation="10dp"
+                            android:layout_marginLeft="2dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="7dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/wheelchair"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:translationZ="2dp"
+                            android:elevation="10dp"
+                            android:textColor="#bdbfc1"
+                            android:textSize="12sp"
+                            android:maxLines="1"
+                            android:text="Varsa Engellilik Durumunuz"
+                            android:fontFamily="@font/nunito_medium"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="4dp"/>
+
+                        <EditText
+                            android:id="@+id/disability"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:elevation="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="20dp"
+                            android:translationZ="1dp"
+                            android:textSize="15sp"
+                            android:imeOptions="actionDone"
+                            android:inputType="text"
+                            android:paddingLeft="40dp"
+                            android:textColorHint="#bdbfc1"
+                            android:fontFamily="@font/nunito_medium"
+                            android:textColor="@color/black"
+                            android:background="@drawable/edittext_border"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <LinearLayout
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:translationZ="2dp"
+                            android:layout_centerVertical="true"
+                            android:elevation="10dp"
+                            android:layout_marginLeft="2dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="7dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/heart"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:translationZ="2dp"
+                            android:elevation="10dp"
+                            android:textColor="#bdbfc1"
+                            android:textSize="12sp"
+                            android:text="Sağlık Sigortası *"
+                            android:fontFamily="@font/nunito_medium"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="4dp"/>
+
+                        <TextView
+                            android:id="@+id/ss"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:elevation="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="20dp"
+                            android:translationZ="1dp"
+                            android:textSize="15sp"
+                            android:paddingLeft="40dp"
+                            android:textColorHint="#bdbfc1"
+                            android:textColor="@color/black"
+                            android:text="Belirtilmedi"
+                            android:background="@drawable/edittext_border"
+                            android:fontFamily="@font/nunito_medium"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

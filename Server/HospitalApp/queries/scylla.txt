@@ -1,0 +1,12 @@
+CREATE TABLE hospitalapp.users (
+    id UUID PRIMARY KEY,
+    username TEXT,
+    name TEXT,
+    surname TEXT,
+    email TEXT,
+    password TEXT,
+    profilePicture TEXT,
+    signDate TEXT,
+    lastLoginIP TEXT,
+    isActive INT
+);

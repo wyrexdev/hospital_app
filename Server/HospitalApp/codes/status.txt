@@ -1,0 +1,14 @@
+1001 = Kullanıcı Bulunamadı
+1002 = E-posta Adresi Belirtilmedi
+1003 = Şifre Belirtilmedi
+1004 = Geçersiz E-Posta
+1005 = Şifre 8 Haneden Kısa Olamaz
+1006 = Şifre En Az 1 Tane Özel Karakter İçermelidir
+1007 = Şifrede Sayılar Kullanılmalıdır
+1008 = Kullanıcı Adı Girilmeli
+1009 = Bu Kullanıcı Zaten Mevcut
+1010 = Kullanıcı Adı Kullanılmakta
+1011 = Geçersiz Şifre
+1012 = Oturumun Süresi Dolmuş
+1013 = Hatalı Giriş
+1014 = Eksik Parametre

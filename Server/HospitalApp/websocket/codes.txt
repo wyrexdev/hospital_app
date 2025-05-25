@@ -1,0 +1,7 @@
+0 = Mail Doğrulandı
+1 = Mail Doğrulandı ama allCompleted = false
+2 = Kullanıcı Bulunamadı
+3 = Odaları Çekmek için istek 
+
+
+2->${id} ID'si verilen kullanıcının bilgilerini dönderir

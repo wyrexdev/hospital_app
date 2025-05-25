@@ -1,0 +1,8 @@
+{
+    "PORT": 1125,
+    "CDN_PORT": 1126,
+    "WEBSOCKET_PORT": 1127,
+    "URL": "https://kisetsuna.com",
+    "CDN_URL": "https://cdn.kisetsuna.com",
+    "IS_LOCAL": false
+}

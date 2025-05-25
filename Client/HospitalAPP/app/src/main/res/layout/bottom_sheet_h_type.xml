@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    android:paddingBottom="20dp"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/image_border"
+        android:elevation="10dp"
+        android:padding="10dp"
+        android:clipToOutline="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/gov"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="Devlet Hastanesi"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nunito_medium"/>
+
+        <TextView
+            android:id="@+id/spc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="Özel Hastane"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nunito_medium"/>
+
+        <TextView
+            android:id="@+id/fk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="Fakülte"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nunito_medium" />
+
+    </LinearLayout>
+</LinearLayout>

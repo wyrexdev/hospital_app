@@ -1,0 +1,3 @@
+0 = Beklemede
+1 = İptal Edildi
+2 = Tamamlandı

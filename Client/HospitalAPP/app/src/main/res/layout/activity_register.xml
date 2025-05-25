@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo_transparan"
+            android:layout_marginTop="50dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/th"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hoşgeldin!"
+            android:textSize="23sp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/hhgy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hesabını oluşturmak için birkaç adım kaldı."
+            android:textSize="15sp"
+            android:textColor="#5C5C5C"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="20dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:elevation="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@drawable/image_border"
+                android:translationZ="1dp">
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/user"
+                    android:padding="15dp"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/edittext_border"
+                android:textColor="@android:color/black"
+                android:hint="Kullanıcı Adınız"
+                android:gravity="center_vertical"
+                android:elevation="10dp"
+                android:layout_marginStart="10dp"
+                android:paddingStart="65dp"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:elevation="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@drawable/image_border"
+                android:translationZ="1dp">
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/mail"
+                    android:padding="15dp"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/edittext_border"
+                android:textColor="@android:color/black"
+                android:hint="E-posta Adresiniz"
+                android:gravity="center_vertical"
+                android:elevation="10dp"
+                android:layout_marginStart="10dp"
+                android:paddingStart="65dp"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:clipChildren="false"
+                android:layout_marginLeft="5dp"
+                android:clipToPadding="false"
+                android:elevation="10dp"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@drawable/image_border"
+                android:translationZ="1dp">
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/pass"
+                    android:padding="15dp"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/edittext_border"
+                android:textColor="@android:color/black"
+                android:hint="Şifreniz"
+                android:gravity="center_vertical"
+                android:elevation="10dp"
+                android:inputType="textPassword"
+                android:layout_marginStart="10dp"
+                android:paddingStart="65dp"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:text="Kayıt Ol"
+            android:textColor="@color/white"
+            android:backgroundTint="#0693ef"
+            app:cornerRadius="50dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="50dp">
+
+            <LinearLayout
+                android:layout_width="75dp"
+                android:layout_height="1dp"
+                android:background="#4C4C4C"/>
+
+            <TextView
+                android:id="@+id/vkgy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:text="Veya kullanarak kayıt ol"/>
+
+            <LinearLayout
+                android:layout_width="75dp"
+                android:layout_height="1dp"
+                android:background="#4C4C4C"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/google"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:background="@drawable/edittext_border"
+                android:elevation="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/google"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/facebook"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:background="@drawable/edittext_border"
+                android:elevation="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/facebook"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/bhy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:text="Bir hesabın var mı? "/>
+
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#03A9F4"
+                android:textSize="14sp"
+                android:text="Giriş Yap"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
